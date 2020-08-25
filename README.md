@@ -1,1 +1,1 @@
-# This spring application exmaple connects to IBM Databases for MongoDB.
+# This spring application example connects to IBM Databases for MongoDB.
