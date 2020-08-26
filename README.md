@@ -1,7 +1,7 @@
 # This spring boot application example connects to IBM Databases for MongoDB and IBM Event Stream (Kafka).
 
 - [How to start the application](#how-to-start-the-application)
-- [How to build docker image](#how-to-build-docker-image)
+- [How to build docker image](#how-to-build-the-docker-image)
 
 ## How to start the application
 
@@ -26,7 +26,7 @@ mvn clean install
 java -Djavax.net.ssl.trustStore=<key_store_full_path>.jks -Djavax.net.ssl.trustStorePassword=<key_store_password> -jar <generated_jar_file_full_path>.jar
 ```
 
-## How to build docker image
+## How to build the docker image
 ```bash
 docker -t <registry_url>/<repo_name>/<image_name>:<image_version> build .
 ```
