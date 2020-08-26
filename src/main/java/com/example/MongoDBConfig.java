@@ -11,11 +11,11 @@ import org.springframework.data.mongodb.repository.config.EnableReactiveMongoRep
 @Configuration
 public class MongoDBConfig extends AbstractReactiveMongoConfiguration {
 
-    @Value("${spring.data.mongodb.database}")
-    private String dbName;
-
-    @Value("${spring.data.mongodb.url}")
+    @Value("${MONGO_DB_URL}")
     private String dbURL;
+
+    @Value("${MONGO_DB_NAME}")
+    private String dbName;
 
     @Override
     public MongoClient reactiveMongoClient() {

@@ -1,4 +1,4 @@
-FROM registry.redhat.io/ubi8/openjdk-8
+FROM adoptopenjdk/openjdk8:ubi-jre
 MAINTAINER Priyank Garg
 WORKDIR /app
 COPY target/*.jar deployment.jar
