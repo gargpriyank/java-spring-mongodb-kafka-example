@@ -24,7 +24,7 @@ keytool -importcert -trustcacerts -file <certificate_file_full_path> -keystore <
 
 3. From the Event Streams for IBM Cloud instance dashboard, click Service Credentials and select or create a new one.
 
-4. Copy the above created credentials content and set the following environment variable to connect to IBM Event Streams (Kafka).
+4. Copy the above created credentials content to the environment variable ES_KAFKA_SERVICE to connect to IBM Event Streams (Kafka). Set environment variable TOPIC_NAME.
 
 ```bash
 export ES_KAFKA_SERVICE='{
@@ -44,6 +44,8 @@ export ES_KAFKA_SERVICE='{
   "password": "...",
   "user": "..."
 }'
+
+export TOPIC_NAME=es-kafka-sample-topic
 ```
 
 5. Install event-stream cli and initialize it to connect to event stream instance.
