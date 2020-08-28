@@ -2,6 +2,7 @@
 
 - [How to start the application](#how-to-start-the-application)
 - [How to build docker image](#how-to-build-the-docker-image)
+- [How to test the application](#how-to-test-the-application)
 
 ## How to start the application
 
@@ -67,3 +68,16 @@ java -Djavax.net.ssl.trustStore=<key_store_full_path>.jks -Djavax.net.ssl.trustS
 docker -t <registry_url>/<repo_name>/<image_name>:<image_version> build .
 docker push <registry_url>/<repo_name>/<image_name>:<image_version>
 ```
+
+## How to test the application
+
+The application saves and retrieves employee data and can be accessed through the endpoint `localhost:8080/employee`.
+1. Send a POST request with following JSON to save employee data. The POST request sends the data to Kafka topic. Kafka consumer listens to the mesaage and save it into MongoDB.
+```bash
+{
+	"name": "..",
+	"address": "...",
+	"deptName": "..."
+}
+```
+2. Send a GET request to retrieve all the employees.
