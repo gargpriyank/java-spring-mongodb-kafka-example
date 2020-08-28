@@ -1,4 +1,4 @@
-# This spring boot application example connects to IBM Databases for MongoDB and IBM Event Streams (Kafka).
+# This spring boot application example connects to IBM Databases for MongoDB and IBM Event Streams (Kafka). It uses Kafka APIs and MongoDB reactive APIs.
 
 - [How to start the application](#how-to-start-the-application)
 - [How to build docker image](#how-to-build-the-docker-image)
