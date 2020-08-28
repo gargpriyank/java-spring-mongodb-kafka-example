@@ -2,7 +2,7 @@
 
 - [Application overview](#application-overview)
 - [How to start the application](#how-to-start-the-application)
-- [How to build docker image](#how-to-build-the-docker-image)
+- [How to build and push the docker image](#how-to-build-and-push-the-docker-image)
 - [How to test the application](#how-to-test-the-application)
 
 ## Application overview
