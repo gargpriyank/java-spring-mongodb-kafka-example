@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class ESKafkaProducer {
 
-    @Value("${TOPIC_NAME}")
+    @Value("${ES_KAFKA_TOPIC_NAME}")
     private String topicName;
 
     private final KafkaTemplate<String, String> kafkaTemplate;

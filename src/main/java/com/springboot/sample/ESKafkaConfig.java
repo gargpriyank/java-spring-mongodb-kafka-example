@@ -26,7 +26,7 @@ import java.util.Map;
 @EnableKafka
 public class ESKafkaConfig {
 
-    @Value("${TOPIC_NAME}")
+    @Value("${ES_KAFKA_TOPIC_NAME}")
     private String topicName;
 
     @Autowired

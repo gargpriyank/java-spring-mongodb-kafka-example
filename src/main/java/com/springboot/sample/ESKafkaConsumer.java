@@ -16,7 +16,7 @@ public class ESKafkaConsumer {
     @Autowired
     private ESKafkaUtil esKafkaUtil;
 
-    @KafkaListener(topics = "${TOPIC_NAME}")
+    @KafkaListener(topics = "${ES_KAFKA_TOPIC_NAME}")
     public void readAndSaveMessage(String message) {
         log.info("Received message: {}", message);
         Employee employee = (Employee) esKafkaUtil.convertToPOJO(message, Employee.class);
