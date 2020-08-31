@@ -1,4 +1,4 @@
-# Sample spring boot application
+# Sample Spring Boot application
 
 - [Application overview](#application-overview)
 - [How to start the application](#how-to-start-the-application)
