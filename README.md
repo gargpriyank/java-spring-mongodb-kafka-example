@@ -7,7 +7,7 @@
 
 ## Application overview
 
-This sample spring boot application uses Kafka APIs to send/receive JSON messages to/from IBM Event Streams (Kafka) topic. It saves the JSON message to IBM Databases for MongoDB. 
+This sample spring boot application uses Kafka APIs to send/receive JSON messages to/from IBM Event Streams (Kafka) topic. It saves the JSON message in IBM Databases for MongoDB. 
 
 ## How to start the application
 
