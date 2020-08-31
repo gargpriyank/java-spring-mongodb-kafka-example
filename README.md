@@ -2,8 +2,8 @@
 
 - [Application overview](#application-overview)
 - [How to start the application](#how-to-start-the-application)
-- [How to build and push the docker image](#how-to-build-and-push-the-docker-image)
 - [How to test the application](#how-to-test-the-application)
+- [How to build and push the docker image](#how-to-build-and-push-the-docker-image)
 
 ## Application overview
 
@@ -68,12 +68,6 @@ mvn clean install
 java -Djavax.net.ssl.trustStore=<key_store_full_path>.jks -Djavax.net.ssl.trustStorePassword=<key_store_password> -jar <generated_jar_file_full_path>.jar
 ```
 
-## How to build and push the docker image
-```bash
-docker -t <registry_url>/<repo_name>/<image_name>:<image_version> build .
-docker push <registry_url>/<repo_name>/<image_name>:<image_version>
-```
-
 ## How to test the application
 
 The application saves and retrieves employee data and can be accessed through the endpoint `localhost:8080/employee`.
@@ -86,3 +80,9 @@ The application saves and retrieves employee data and can be accessed through th
 }
 ```
 2. Send a GET request to retrieve all the employees.
+
+## How to build and push the docker image
+```bash
+docker -t <registry_url>/<repo_name>/<image_name>:<image_version> build .
+docker push <registry_url>/<repo_name>/<image_name>:<image_version>
+```
