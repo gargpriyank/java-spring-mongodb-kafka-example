@@ -71,7 +71,7 @@ java -Djavax.net.ssl.trustStore=<key_store_full_path>.jks -Djavax.net.ssl.trustS
 ## How to test the application
 
 The application saves and retrieves employee data and can be accessed through the endpoint `localhost:8080/employee`.
-1. Send a POST request with following JSON to save employee data. The POST request sends the data to Kafka topic. Kafka consumer listens to the mesaage and save it into MongoDB.
+1. Send a POST request with following JSON to save employee data. The POST request sends the data to Kafka topic. Kafka consumer listens to the message and save it into MongoDB.
 ```bash
 {
 	"name": "..",
