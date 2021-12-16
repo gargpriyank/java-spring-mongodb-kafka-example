@@ -92,3 +92,4 @@ Kafka consumer listens to the message and save it into MongoDB.
 docker -t <registry_url>/<repo_name>/<image_name>:<image_version> build .
 docker push <registry_url>/<repo_name>/<image_name>:<image_version>
 ```
+
